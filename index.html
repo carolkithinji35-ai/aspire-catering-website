@@ -28,17 +28,7 @@
     </head>
     <body class="home-page">
         <a class="skip-link" href="#main">Skip to content</a>
-        <div class="utility-bar">
-            <div class="container utility-bar__inner">
-                <p>
-                    Meru, Kenya <span aria-hidden="true">·</span> We cater and
-                    support events across Kenya and beyond
-                </p>
-                <a href="tel:+254729845842"
-                    >Call us <span aria-hidden="true">↗</span></a
-                >
-            </div>
-        </div>
+
         <header class="site-header">
             <div class="container site-header__inner">
                 <a class="brand" href="/" aria-label="Aspire home">
@@ -73,135 +63,189 @@
                     >
                     <a href="/gallery.html" data-nav-link>Gallery</a>
 
-                    <a href="/contact.html" data-nav-link>Contact us</a>
-                    <a class="nav-cta" href="/contact.html"
-                        >Talk to us <span aria-hidden="true">↗</span></a
+                    <a class="nav-cta" href="/contact.html" data-nav-link
+                        >Contact us</a
                     >
                 </nav>
             </div>
         </header>
 
         <main id="main">
-            <section class="hero hero--image container" aria-labelledby="hero-title">
-                <div class="hero__copy reveal">
-                    <p class="eyebrow">Aspire Catering &amp; Events Services</p>
-                    <h1 id="hero-title">
-                        Set the scene.<br /><em>Gather beautifully.</em>
-                    </h1>
-                    <p class="hero__intro">
-                        We provide full-service catering and event support,
-                        bringing local and international dishes together with
-                        the equipment your occasion needs.
-                    </p>
-                    <div class="hero__actions">
-                        <a class="button button--dark" href="/services.html"
-                            >Explore our services
-                            <span aria-hidden="true">↗</span></a
-                        >
-                        <a class="text-link" href="/contact.html"
-                            >Talk about your event
-                            <span aria-hidden="true">→</span></a
-                        >
+            <section class="hero hero--photo" aria-labelledby="hero-title">
+                <img
+                    class="hero__backdrop"
+                    src="/images/hero background.jpg"
+                    alt=""
+                    width="2048"
+                    height="1365"
+                    fetchpriority="high"
+                />
+                <div class="hero__shade" aria-hidden="true"></div>
+                <div class="container hero__inner">
+                    <div class="hero__copy reveal">
+                        
+                        <h1 id="hero-title">
+                            Set the scene.<br /><em>Gather beautifully.</em>
+                        </h1>
+                        <p class="hero__intro">
+                            We provide full-service catering and event support,
+                            bringing local and international dishes together
+                            with the equipment your occasion needs.
+                        </p>
+                        <div class="hero__actions">
+                            <a
+                                class="button button--light"
+                                href="/services.html"
+                                >Explore our services</a
+                            >
+                            <a class="text-link" href="/contact.html"
+                                >Talk about your event</a
+                            >
+                        </div>
+                        <div class="hero__values" aria-label="Our values">
+                            <span>Professionalism</span
+                            ><i aria-hidden="true"></i><span>Dedication</span
+                            ><i aria-hidden="true"></i><span>Excellence</span>
+                        </div>
                     </div>
-                    <div class="hero__values" aria-label="Our values">
-                        <span>Professionalism</span><i aria-hidden="true"></i
-                        ><span>Dedication</span><i aria-hidden="true"></i
-                        ><span>Excellence</span>
-                    </div>
-                </div>
-                <div class="hero__media reveal">
-                    <figure class="hero__main-photo">
-                        <img
-                            src="/images/events/banquet-setup.jpg"
-                            alt="An event dining setup arranged for guests"
-                            width="592"
-                            height="452"
-                            fetchpriority="high"
-                        />
-                        <figcaption>
-                            <span>Events &amp; catering</span
-                            ><strong>Made for gathering.</strong>
-                        </figcaption>
-                    </figure>
-                    <figure class="hero__inset">
-                        <img
-                            src="/images/food/catering-display.jpg"
-                            alt="A display of food prepared for an event"
-                            width="582"
-                            height="455"
-                        />
-                        <figcaption>Food for the occasion</figcaption>
-                    </figure>
-                </div>
-            </section>
-
-            <section class="intro-band" aria-label="Our service approach">
-                <div class="container intro-band__inner">
-                    <p>
-                        Thoughtful service.<br /><em>Details made to fit.</em>
-                    </p>
-                    <p class="intro-band__copy">
-                        We shape our service around your preferences and budget,
-                        bringing together carefully prepared food and
-                        event-equipment hire.
-                    </p>
-                    <a
-                        class="circle-arrow"
-                        href="/about.html"
-                        aria-label="Read about us"
-                        >↓</a
-                    >
                 </div>
             </section>
 
             <section
-                class="section container"
+                class="home-about"
+                id="about-preview"
+                aria-labelledby="home-about-title"
+            >
+                <div class="home-about__copy">
+                    <h2 id="home-about-title">Welcome to Aspire</h2>
+                    <p>
+                        We are glad you are here. We are a team of chefs, cooks,
+                        décor experts and helpers from Meru, and every plate we
+                        serve and every tent we put up carries our name. After
+                        many years in business, we know that people remember how
+                        an event felt, so we cook with fresh ingredients, set up
+                        with care, and always keep your budget and preferences
+                        in mind.
+                    </p>
+                    <p class="home-about__values-intro">
+                        These are the values we stand for:
+                    </p>
+                    <ul class="home-about__values" aria-label="Our values">
+                        <li>Professionalism</li>
+                        <li>Dedication</li>
+                        <li>Excellence</li>
+                        <li>Quality</li>
+                        <li>Affordability</li>
+                    </ul>
+                    <p>
+                        And in everything we do, we hold on to honesty,
+                        reliability and integrity.
+                    </p>
+                    <a class="text-link home-about__link" href="/about.html"
+                        >More about us</a
+                    >
+                </div>
+                <figure class="home-about__visual">
+                    <img
+                        src="/images/food/buffet-dishes.jpg"
+                        alt="A freshly prepared meal served for a gathering"
+                        width="559"
+                        height="448"
+                        loading="lazy"
+                    />
+                </figure>
+            </section>
+
+            <section
+                class="section container home-occasions"
+                id="occasions"
                 aria-labelledby="occasions-title"
             >
                 <div class="section-heading reveal">
                     <div>
-                        <p class="eyebrow">Occasions</p>
+                        <p class="eyebrow">Our occasions</p>
                         <h2 id="occasions-title">
-                            A place for every <em>gathering.</em>
+                            Gatherings for <em>every occasion.</em>
                         </h2>
                     </div>
                     <a class="text-link" href="/services.html"
-                        >See services &amp; events
-                        <span aria-hidden="true">↗</span></a
+                        >See our services</a
                     >
                 </div>
-                <div class="occasion-grid">
-                    <article class="occasion-card reveal">
-                        <span class="occasion-card__number">01</span>
-                        <h3>Corporate<br />&amp; social</h3>
-                        <p>
-                            Events for teams, organisations, families and
-                            communities.
-                        </p>
-                    </article>
-                    <article class="occasion-card occasion-card--accent reveal">
-                        <span class="occasion-card__number">02</span>
-                        <h3>Weddings<br />&amp; ruracio</h3>
-                        <p>
-                            Catering and event equipment for significant days
-                            together.
-                        </p>
-                    </article>
-                    <article class="occasion-card reveal">
-                        <span class="occasion-card__number">03</span>
-                        <h3>Birthdays,<br />anniversaries &amp; graduations</h3>
-                        <p>
-                            For marking personal milestones with family and
-                            friends.
-                        </p>
-                    </article>
-                    <article class="occasion-card reveal">
-                        <span class="occasion-card__number">04</span>
-                        <h3>Burials</h3>
-                        <p>
-                            Food and event support for remembrance gatherings.
-                        </p>
-                    </article>
+                <div class="occasion-feature" data-occasion-feature>
+                    <div class="occasion-feature__stories">
+                        <article
+                            class="occasion-story is-active"
+                            data-occasion-step
+                        >
+                            <h3>
+                                <a
+                                    class="occasion-story__title"
+                                    href="/services.html#occasions"
+                                    >Corporate and social</a
+                                >
+                            </h3>
+                            <p>
+                                We support corporate and social gatherings
+                                through catering and event-equipment hire shaped
+                                around the occasion.
+                            </p>
+                        </article>
+                        <article class="occasion-story" data-occasion-step>
+                            <h3>
+                                <a
+                                    class="occasion-story__title"
+                                    href="/services.html#occasions"
+                                    >Weddings and ruracio</a
+                                >
+                            </h3>
+                            <p>
+                                We bring food, attentive service and event
+                                equipment together for wedding celebrations and
+                                ruracio.
+                            </p>
+                        </article>
+                        <article class="occasion-story" data-occasion-step>
+                            <h3>
+                                <a
+                                    class="occasion-story__title"
+                                    href="/services.html#occasions"
+                                    >Birthdays, anniversaries and graduations</a
+                                >
+                            </h3>
+                            <p>
+                                We prepare local and international dishes for
+                                the milestones you celebrate with family,
+                                friends and colleagues.
+                            </p>
+                        </article>
+                        <article class="occasion-story" data-occasion-step>
+                            <h3>
+                                <a
+                                    class="occasion-story__title"
+                                    href="/services.html#occasions"
+                                    >Remembrance gatherings</a
+                                >
+                            </h3>
+                            <p>
+                                We provide catering and event support for
+                                burials and the gatherings where families come
+                                together to remember.
+                            </p>
+                        </article>
+                    </div>
+                    <figure class="occasion-feature__visual">
+                        <img
+                            src="/images/events/tented-event.jpg"
+                            alt="White marquees arranged for an outdoor gathering"
+                            width="1280"
+                            height="417"
+                            loading="lazy"
+                        />
+                        <figcaption>
+                            A tented event setup prepared for guests
+                        </figcaption>
+                    </figure>
                 </div>
             </section>
 
@@ -224,10 +268,10 @@
                         <article class="service-preview reveal">
                             <div class="service-preview__image">
                                 <img
-                                    src="/images/food/prepared-dishes.jpg"
-                                    alt="A selection of prepared dishes"
-                                    width="589"
-                                    height="433"
+                                    src="/images/food/buffet-dishes.jpg"
+                                    alt="A plated meal prepared by our catering team"
+                                    width="559"
+                                    height="448"
                                     loading="lazy"
                                 /><span class="service-preview__index"
                                     >01 / Catering</span
@@ -243,8 +287,7 @@
                                 <a
                                     class="text-link"
                                     href="/services.html#catering"
-                                    >Explore catering
-                                    <span aria-hidden="true">↗</span></a
+                                    >Explore catering</a
                                 >
                             </div>
                         </article>
@@ -253,10 +296,10 @@
                         >
                             <div class="service-preview__image">
                                 <img
-                                    src="/images/events/tented-event.jpg"
-                                    alt="A tented event setup ready for guests"
-                                    width="653"
-                                    height="421"
+                                    src="/images/events/tent-table-setup.jpg"
+                                    alt="A table and chairs arranged beneath a tent"
+                                    width="506"
+                                    height="393"
                                     loading="lazy"
                                 /><span class="service-preview__index"
                                     >02 / Equipment</span
@@ -271,8 +314,7 @@
                                 <a
                                     class="text-link"
                                     href="/services.html#equipment"
-                                    >Explore equipment
-                                    <span aria-hidden="true">↗</span></a
+                                    >Explore equipment</a
                                 >
                             </div>
                         </article>
@@ -308,8 +350,7 @@
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="Find our Google Maps listing and reviews"
-                            >Read our Google reviews
-                            <span aria-hidden="true">↗</span></a
+                            >Read our Google reviews</a
                         >
                     </div>
                 </div>
@@ -322,7 +363,7 @@
                         Planning a gathering?<br /><em>Let's talk details.</em>
                     </h2>
                     <a class="button button--light" href="/contact.html"
-                        >Contact us <span aria-hidden="true">↗</span></a
+                        >Contact us</a
                     >
                 </div>
             </section>
@@ -368,29 +409,93 @@
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="WhatsApp"
-                            ><span aria-hidden="true">wa</span></a
-                        >
+                            ><svg
+                                class="social-icon social-icon--whatsapp"
+                                viewBox="0 0 32 32"
+                                aria-hidden="true"
+                                focusable="false"
+                            >
+                                <path
+                                    d="M16 3.2A12.7 12.7 0 0 0 5.1 22.4L3.4 28.7l6.5-1.7A12.7 12.7 0 1 0 16 3.2Z"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                                <path
+                                    d="M11.3 9.7c-.4 0-.8.2-1.1.6-.4.5-1.3 1.4-1.3 3.3s1.3 3.8 1.5 4.1c.2.3 2.5 4 6.1 5.4 3 .9 3.6.7 4.3.6.7-.1 2.1-.8 2.4-1.6.3-.8.3-1.5.2-1.6-.1-.1-.3-.2-.7-.4l-2.4-1.1c-.3-.1-.6-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.3-.8.1-.4-.2-1.7-.6-3.2-2-.9-.8-1.5-1.8-1.7-2.2-.2-.3 0-.5.2-.7l.6-.7c.2-.2.2-.4.3-.6.1-.2 0-.5 0-.7l-1.1-2.5c-.3-.6-.6-.7-.9-.7Z"
+                                    fill="currentColor"
+                                /></svg
+                        ></a>
                         <span
                             class="social-link social-slot"
                             data-social-slot="facebook"
                             role="img"
-                            aria-label="Facebook link to be added"
-                            ><span aria-hidden="true">f</span></span
-                        >
+                            aria-label="Facebook icon"
+                            ><svg
+                                class="social-icon"
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                                focusable="false"
+                            >
+                                <path
+                                    fill="currentColor"
+                                    d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073c0 6.016 4.388 11.025 10.125 11.928v-8.437H7.078v-3.49h3.047V9.41c0-3.023 1.792-4.703 4.533-4.703 1.312 0 2.686.235 2.686.235v2.953h-1.513c-1.49 0-1.954.932-1.954 1.885v2.294h3.328l-.532 3.49h-2.796v8.437C19.612 23.098 24 18.089 24 12.073Z"
+                                /></svg
+                        ></span>
                         <span
                             class="social-link social-slot"
                             data-social-slot="twitter"
                             role="img"
-                            aria-label="Twitter link to be added"
-                            ><span aria-hidden="true">t</span></span
-                        >
+                            aria-label="Twitter icon"
+                            ><svg
+                                class="social-icon"
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                                focusable="false"
+                            >
+                                <path
+                                    fill="currentColor"
+                                    d="M23.953 4.57a10 10 0 0 1-2.825.775 4.932 4.932 0 0 0 2.163-2.723 9.99 9.99 0 0 1-3.127 1.195 4.92 4.92 0 0 0-8.384 4.482A13.98 13.98 0 0 1 1.64 3.162a4.822 4.822 0 0 0-.666 2.475c0 1.708.87 3.216 2.188 4.096a4.904 4.904 0 0 1-2.229-.616v.06c0 2.385 1.697 4.374 3.95 4.827a4.935 4.935 0 0 1-2.224.085c.627 1.956 2.445 3.379 4.6 3.419A9.896 9.896 0 0 1 0 18.407a13.94 13.94 0 0 0 7.548 2.212c9.057 0 14.01-7.504 14.01-14.01 0-.213-.005-.425-.014-.636A10.012 10.012 0 0 0 24 4.59Z"
+                                /></svg
+                        ></span>
                         <span
                             class="social-link social-slot"
                             data-social-slot="instagram"
                             role="img"
-                            aria-label="Instagram link to be added"
-                            ><span aria-hidden="true">ig</span></span
-                        >
+                            aria-label="Instagram icon"
+                            ><svg
+                                class="social-icon"
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                                focusable="false"
+                            >
+                                <rect
+                                    x="3"
+                                    y="3"
+                                    width="18"
+                                    height="18"
+                                    rx="5"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                />
+                                <circle
+                                    cx="12"
+                                    cy="12"
+                                    r="4"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                />
+                                <circle
+                                    cx="17.5"
+                                    cy="6.5"
+                                    r="1"
+                                    fill="currentColor"
+                                /></svg
+                        ></span>
                     </nav>
                 </div>
             </div>
@@ -403,7 +508,7 @@
                     <div>
                         <a href="/privacy.html">Privacy</a
                         ><a href="/terms.html">Terms</a
-                        ><a href="#main">Back to top ↑</a>
+                        ><a href="#main">Back to top</a>
                     </div>
                 </div>
             </div>

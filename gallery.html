@@ -28,17 +28,7 @@
     </head>
     <body>
         <a class="skip-link" href="#main">Skip to content</a>
-        <div class="utility-bar">
-            <div class="container utility-bar__inner">
-                <p>
-                    Meru, Kenya <span aria-hidden="true">·</span> We cater and
-                    support events across Kenya and beyond
-                </p>
-                <a href="tel:+254729845842"
-                    >Call us <span aria-hidden="true">↗</span></a
-                >
-            </div>
-        </div>
+
         <header class="site-header">
             <div class="container site-header__inner">
                 <a class="brand" href="/" aria-label="Aspire home"
@@ -69,21 +59,14 @@
                     ><a href="/services.html" data-nav-link
                         >Our services &amp; events</a
                     ><a href="/gallery.html" data-nav-link>Gallery</a
-                    ><a href="/contact.html" data-nav-link>Contact us</a
-                    ><a class="nav-cta" href="/contact.html"
-                        >Talk to us <span aria-hidden="true">↗</span></a
+                    ><a class="nav-cta" href="/contact.html" data-nav-link
+                        >Contact us</a
                     >
                 </nav>
             </div>
         </header>
         <main id="main">
             <section class="page-hero page-hero--gallery">
-                <img
-                    src="/images/events/tented-event.jpg"
-                    alt="An outdoor event beneath a large tent"
-                    fetchpriority="high"
-                />
-                <div class="page-hero__shade"></div>
                 <div class="container page-hero__content">
                     <p class="eyebrow eyebrow--light">Our gallery</p>
                     <h1>Food, setting<br />&amp; <em>occasion.</em></h1>
@@ -93,24 +76,20 @@
                     </p>
                 </div>
             </section>
-            <nav class="breadcrumbs container" aria-label="Breadcrumb">
-                <a href="/">Home</a><span aria-hidden="true">/</span
-                ><span aria-current="page">Gallery</span>
-            </nav>
+
             <section
                 class="section container gallery-section"
                 aria-labelledby="gallery-title"
             >
                 <div class="section-heading reveal">
                     <div>
-                        <p class="eyebrow">A moving gallery</p>
+                        <p class="eyebrow">Our portfolio</p>
                         <h2 id="gallery-title">
-                            A feeling for<br /><em>the occasion.</em>
+                            Food, gatherings<br />and <em>the details.</em>
                         </h2>
                     </div>
                     <p class="section-heading__aside">
-                        Scroll to move through the photos. Select any image to
-                        view it larger.
+                        Select any photograph to view it larger.
                     </p>
                 </div>
                 <div
@@ -141,225 +120,635 @@
                         Events &amp; equipment
                     </button>
                 </div>
-                <p class="gallery-scroll-hint" aria-hidden="true">
-                    Keep scrolling to explore <span>↓</span>
-                </p>
-                <div class="gallery-scroll" data-scroll-gallery>
-                    <div
-                        class="gallery-scroll__stage"
-                        aria-label="Scroll-driven photo carousel"
+                <div
+                    class="gallery-grid"
+                    aria-label="Food and event photographs"
+                >
+                    <figure
+                        class="gallery-card gallery-card--feature"
+                        data-category="food"
                     >
-                        <div class="gallery-scroll__track">
-                            <button
-                                class="gallery-item gallery-item--large"
-                                type="button"
-                                data-category="food"
-                                data-full="/images/food/buffet-dishes.jpg"
-                                data-caption="A selection of buffet dishes"
-                            >
-                                <img
-                                    src="/images/food/buffet-dishes.jpg"
-                                    alt="A selection of buffet dishes"
-                                    width="589"
-                                    height="433"
-                                    loading="lazy"
-                                /><span class="gallery-item__label"
-                                    >Food &amp; catering</span
-                                >
-                            </button>
-                            <button
-                                class="gallery-item"
-                                type="button"
-                                data-category="events"
-                                data-full="/images/events/banquet-setup.jpg"
-                                data-caption="A banquet setting prepared for guests"
-                            >
-                                <img
-                                    src="/images/events/banquet-setup.jpg"
-                                    alt="A banquet setting prepared for guests"
-                                    width="592"
-                                    height="452"
-                                    loading="lazy"
-                                /><span class="gallery-item__label"
-                                    >Event setup</span
-                                >
-                            </button>
-                            <button
-                                class="gallery-item"
-                                type="button"
-                                data-category="food"
-                                data-full="/images/food/event-refreshments.jpg"
-                                data-caption="Refreshments ready to be served"
-                            >
-                                <img
-                                    src="/images/food/event-refreshments.jpg"
-                                    alt="Refreshments ready to be served"
-                                    width="569"
-                                    height="420"
-                                    loading="lazy"
-                                /><span class="gallery-item__label"
-                                    >Refreshments</span
-                                >
-                            </button>
-                            <button
-                                class="gallery-item"
-                                type="button"
-                                data-category="events"
-                                data-full="/images/events/event-equipment-setup.jpg"
-                                data-caption="Chairs and equipment arranged for an event"
-                            >
-                                <img
-                                    src="/images/events/event-equipment-setup.jpg"
-                                    alt="Chairs and equipment arranged for an event"
-                                    width="634"
-                                    height="386"
-                                    loading="lazy"
-                                /><span class="gallery-item__label"
-                                    >Event equipment</span
-                                >
-                            </button>
-                            <button
-                                class="gallery-item gallery-item--large"
-                                type="button"
-                                data-category="food"
-                                data-full="/images/food/catering-display.jpg"
-                                data-caption="A catering display prepared for an occasion"
-                            >
-                                <img
-                                    src="/images/food/catering-display.jpg"
-                                    alt="A catering display prepared for an occasion"
-                                    width="582"
-                                    height="455"
-                                    loading="lazy"
-                                /><span class="gallery-item__label"
-                                    >Catering display</span
-                                >
-                            </button>
-                            <button
-                                class="gallery-item"
-                                type="button"
-                                data-category="events"
-                                data-full="/images/events/garden-event-setup.jpg"
-                                data-caption="A garden event setup"
-                            >
-                                <img
-                                    src="/images/events/garden-event-setup.jpg"
-                                    alt="A garden event setup among trees"
-                                    width="634"
-                                    height="386"
-                                    loading="lazy"
-                                /><span class="gallery-item__label"
-                                    >Event setting</span
-                                >
-                            </button>
-                            <button
-                                class="gallery-item"
-                                type="button"
-                                data-category="food"
-                                data-full="/images/food/food-service-station.jpg"
-                                data-caption="A food service station at an event"
-                            >
-                                <img
-                                    src="/images/food/food-service-station.jpg"
-                                    alt="A food service station at an event"
-                                    width="536"
-                                    height="393"
-                                    loading="lazy"
-                                /><span class="gallery-item__label"
-                                    >Food service</span
-                                >
-                            </button>
-                            <button
-                                class="gallery-item"
-                                type="button"
-                                data-category="food"
-                                data-full="/images/food/prepared-food.jpg"
-                                data-caption="Prepared food for an event"
-                            >
-                                <img
-                                    src="/images/food/prepared-food.jpg"
-                                    alt="Prepared food for an event"
-                                    width="589"
-                                    height="433"
-                                    loading="lazy"
-                                /><span class="gallery-item__label"
-                                    >Prepared food</span
-                                >
-                            </button>
-                            <button
-                                class="gallery-item gallery-item--large"
-                                type="button"
-                                data-category="events"
-                                data-full="/images/events/outdoor-tent-setup.jpg"
-                                data-caption="An outdoor tent setup"
-                            >
-                                <img
-                                    src="/images/events/outdoor-tent-setup.jpg"
-                                    alt="An outdoor tent setup"
-                                    width="573"
-                                    height="445"
-                                    loading="lazy"
-                                /><span class="gallery-item__label"
-                                    >Tents &amp; events</span
-                                >
-                            </button>
-                            <button
-                                class="gallery-item"
-                                type="button"
-                                data-category="food"
-                                data-full="/images/food/prepared-dishes.jpg"
-                                data-caption="A variety of prepared dishes"
-                            >
-                                <img
-                                    src="/images/food/prepared-dishes.jpg"
-                                    alt="A variety of prepared dishes"
-                                    width="589"
-                                    height="433"
-                                    loading="lazy"
-                                /><span class="gallery-item__label"
-                                    >Prepared dishes</span
-                                >
-                            </button>
-                            <button
-                                class="gallery-item"
-                                type="button"
-                                data-category="food"
-                                data-full="/images/food/table-setting-and-food.jpg"
-                                data-caption="A table setting with food"
-                            >
-                                <img
-                                    src="/images/food/table-setting-and-food.jpg"
-                                    alt="A table setting with food"
-                                    width="653"
-                                    height="421"
-                                    loading="lazy"
-                                /><span class="gallery-item__label"
-                                    >Table setting</span
-                                >
-                            </button>
-                            <button
-                                class="gallery-item"
-                                type="button"
-                                data-category="events"
-                                data-full="/images/events/tented-event.jpg"
-                                data-caption="A tented event setup"
-                            >
-                                <img
-                                    src="/images/events/tented-event.jpg"
-                                    alt="A tented event setup"
-                                    width="653"
-                                    height="421"
-                                    loading="lazy"
-                                /><span class="gallery-item__label"
-                                    >Tented event</span
-                                >
-                            </button>
-                        </div>
-                    </div>
+                        <button
+                            class="gallery-item"
+                            type="button"
+                            data-full="/images/food/buffet-dishes.jpg"
+                            data-caption="Prepared dishes for a gathering"
+                            aria-label="Open photo: Prepared dishes for a gathering"
+                        >
+                            <img
+                                src="/images/food/buffet-dishes.jpg"
+                                alt="A plated meal with prepared accompaniments"
+                                width="559"
+                                height="448"
+                                loading="lazy"
+                            />
+                        </button>
+                        <figcaption class="gallery-card__caption">
+                            Prepared dishes for a gathering
+                        </figcaption>
+                    </figure>
+                    <figure
+                        class="gallery-card gallery-card--standard"
+                        data-category="food"
+                    >
+                        <button
+                            class="gallery-item"
+                            type="button"
+                            data-full="/images/food/event-refreshments.jpg"
+                            data-caption="Prepared drinks"
+                            aria-label="Open photo: Prepared drinks"
+                        >
+                            <img
+                                src="/images/food/event-refreshments.jpg"
+                                alt="Colourful drinks arranged for service"
+                                width="589"
+                                height="461"
+                                loading="lazy"
+                            />
+                        </button>
+                        <figcaption class="gallery-card__caption">
+                            Prepared drinks
+                        </figcaption>
+                    </figure>
+                    <figure
+                        class="gallery-card gallery-card--standard"
+                        data-category="food"
+                    >
+                        <button
+                            class="gallery-item"
+                            type="button"
+                            data-full="/images/food/prepared-dishes.jpg"
+                            data-caption="Prepared snacks"
+                            aria-label="Open photo: Prepared snacks"
+                        >
+                            <img
+                                src="/images/food/prepared-dishes.jpg"
+                                alt="An assortment of prepared snacks"
+                                width="557"
+                                height="433"
+                                loading="lazy"
+                            />
+                        </button>
+                        <figcaption class="gallery-card__caption">
+                            Prepared snacks
+                        </figcaption>
+                    </figure>
+                    <figure
+                        class="gallery-card gallery-card--standard"
+                        data-category="food"
+                    >
+                        <button
+                            class="gallery-item"
+                            type="button"
+                            data-full="/images/food/two-side-dishes.jpg"
+                            data-caption="Prepared side dishes"
+                            aria-label="Open photo: Prepared side dishes"
+                        >
+                            <img
+                                src="/images/food/two-side-dishes.jpg"
+                                alt="Green and yellow side dishes in a serving tray"
+                                width="582"
+                                height="393"
+                                loading="lazy"
+                            />
+                        </button>
+                        <figcaption class="gallery-card__caption">
+                            Prepared side dishes
+                        </figcaption>
+                    </figure>
+                    <figure
+                        class="gallery-card gallery-card--standard"
+                        data-category="food"
+                    >
+                        <button
+                            class="gallery-item"
+                            type="button"
+                            data-full="/images/food/rice-dish.jpg"
+                            data-caption="A rice dish prepared for a gathering"
+                            aria-label="Open photo: A rice dish prepared for a gathering"
+                        >
+                            <img
+                                src="/images/food/rice-dish.jpg"
+                                alt="A bowl of rice prepared for service"
+                                width="631"
+                                height="433"
+                                loading="lazy"
+                            />
+                        </button>
+                        <figcaption class="gallery-card__caption">
+                            A rice dish prepared for a gathering
+                        </figcaption>
+                    </figure>
+                    <figure
+                        class="gallery-card gallery-card--wide"
+                        data-category="food"
+                    >
+                        <button
+                            class="gallery-item"
+                            type="button"
+                            data-full="/images/food/buffet-line.jpg"
+                            data-caption="Buffet dishes arranged for service"
+                            aria-label="Open photo: Buffet dishes arranged for service"
+                        >
+                            <img
+                                src="/images/food/buffet-line.jpg"
+                                alt="A line of buffet dishes set out for service"
+                                width="591"
+                                height="433"
+                                loading="lazy"
+                            />
+                        </button>
+                        <figcaption class="gallery-card__caption">
+                            Buffet dishes arranged for service
+                        </figcaption>
+                    </figure>
+                    <figure
+                        class="gallery-card gallery-card--standard"
+                        data-category="food"
+                    >
+                        <button
+                            class="gallery-item"
+                            type="button"
+                            data-full="/images/food/prepared-food.jpg"
+                            data-caption="Prepared drinks ready to serve"
+                            aria-label="Open photo: Prepared drinks ready to serve"
+                        >
+                            <img
+                                src="/images/food/prepared-food.jpg"
+                                alt="Prepared drinks displayed at an event"
+                                width="589"
+                                height="433"
+                                loading="lazy"
+                            />
+                        </button>
+                        <figcaption class="gallery-card__caption">
+                            Prepared drinks ready to serve
+                        </figcaption>
+                    </figure>
+                    <figure
+                        class="gallery-card gallery-card--tall"
+                        data-category="food"
+                    >
+                        <button
+                            class="gallery-item"
+                            type="button"
+                            data-full="/images/food/food-service-station.jpg"
+                            data-caption="Prepared chicken dishes"
+                            aria-label="Open photo: Prepared chicken dishes"
+                        >
+                            <img
+                                src="/images/food/food-service-station.jpg"
+                                alt="A tray of prepared chicken"
+                                width="536"
+                                height="393"
+                                loading="lazy"
+                            />
+                        </button>
+                        <figcaption class="gallery-card__caption">
+                            Prepared chicken dishes
+                        </figcaption>
+                    </figure>
+                    <figure
+                        class="gallery-card gallery-card--wide"
+                        data-category="food"
+                    >
+                        <button
+                            class="gallery-item"
+                            type="button"
+                            data-full="/images/food/buffet-rice.jpg"
+                            data-caption="Rice and buffet accompaniments"
+                            aria-label="Open photo: Rice and buffet accompaniments"
+                        >
+                            <img
+                                src="/images/food/buffet-rice.jpg"
+                                alt="Rice and side dishes ready for buffet service"
+                                width="620"
+                                height="433"
+                                loading="lazy"
+                            />
+                        </button>
+                        <figcaption class="gallery-card__caption">
+                            Rice and buffet accompaniments
+                        </figcaption>
+                    </figure>
+                    <figure
+                        class="gallery-card gallery-card--standard"
+                        data-category="food"
+                    >
+                        <button
+                            class="gallery-item"
+                            type="button"
+                            data-full="/images/food/green-side-dish.jpg"
+                            data-caption="A prepared side dish"
+                            aria-label="Open photo: A prepared side dish"
+                        >
+                            <img
+                                src="/images/food/green-side-dish.jpg"
+                                alt="A bowl of prepared green side dish"
+                                width="559"
+                                height="463"
+                                loading="lazy"
+                            />
+                        </button>
+                        <figcaption class="gallery-card__caption">
+                            A prepared side dish
+                        </figcaption>
+                    </figure>
+                    <figure
+                        class="gallery-card gallery-card--standard"
+                        data-category="food"
+                    >
+                        <button
+                            class="gallery-item"
+                            type="button"
+                            data-full="/images/food/catering-display.jpg"
+                            data-caption="Roasted meat prepared for service"
+                            aria-label="Open photo: Roasted meat prepared for service"
+                        >
+                            <img
+                                src="/images/food/catering-display.jpg"
+                                alt="Roasted meat arranged for catering service"
+                                width="582"
+                                height="455"
+                                loading="lazy"
+                            />
+                        </button>
+                        <figcaption class="gallery-card__caption">
+                            Roasted meat prepared for service
+                        </figcaption>
+                    </figure>
+                    <figure
+                        class="gallery-card gallery-card--standard"
+                        data-category="food"
+                    >
+                        <button
+                            class="gallery-item"
+                            type="button"
+                            data-full="/images/food/table-setting-and-food.jpg"
+                            data-caption="Salads &amp; side dishes"
+                            aria-label="Open photo: Salads &amp; side dishes"
+                        >
+                            <img
+                                src="/images/food/table-setting-and-food.jpg"
+                                alt="Prepared vegetables and side dishes"
+                                width="653"
+                                height="421"
+                                loading="lazy"
+                            />
+                        </button>
+                        <figcaption class="gallery-card__caption">
+                            Salads &amp; side dishes
+                        </figcaption>
+                    </figure>
+                    <figure
+                        class="gallery-card gallery-card--wide"
+                        data-category="food"
+                    >
+                        <button
+                            class="gallery-item"
+                            type="button"
+                            data-full="/images/food/team-at-buffet.jpg"
+                            data-caption="Our catering team at service"
+                            aria-label="Open photo: Our catering team at service"
+                        >
+                            <img
+                                src="/images/food/team-at-buffet.jpg"
+                                alt="Our catering team serving from a buffet"
+                                width="612"
+                                height="408"
+                                loading="lazy"
+                            />
+                        </button>
+                        <figcaption class="gallery-card__caption">
+                            Our catering team at service
+                        </figcaption>
+                    </figure>
+                    <figure
+                        class="gallery-card gallery-card--wide"
+                        data-category="events"
+                    >
+                        <button
+                            class="gallery-item"
+                            type="button"
+                            data-full="/images/events/service-team.jpg"
+                            data-caption="Our event service team"
+                            aria-label="Open photo: Our event service team"
+                        >
+                            <img
+                                src="/images/events/service-team.jpg"
+                                alt="Our event service team gathered together"
+                                width="789"
+                                height="486"
+                                loading="lazy"
+                            />
+                        </button>
+                        <figcaption class="gallery-card__caption">
+                            Our event service team
+                        </figcaption>
+                    </figure>
+                    <figure
+                        class="gallery-card gallery-card--feature"
+                        data-category="events"
+                    >
+                        <button
+                            class="gallery-item"
+                            type="button"
+                            data-full="/images/events/tented-event.jpg"
+                            data-caption="Outdoor event marquees"
+                            aria-label="Open photo: Outdoor event marquees"
+                        >
+                            <img
+                                src="/images/events/tented-event.jpg"
+                                alt="A row of white marquees set up for an outdoor gathering"
+                                width="1280"
+                                height="417"
+                                loading="lazy"
+                            />
+                        </button>
+                        <figcaption class="gallery-card__caption">
+                            Outdoor event marquees
+                        </figcaption>
+                    </figure>
+                    <figure
+                        class="gallery-card gallery-card--standard"
+                        data-category="events"
+                    >
+                        <button
+                            class="gallery-item"
+                            type="button"
+                            data-full="/images/events/marquee-gathering.jpg"
+                            data-caption="Tented event setting"
+                            aria-label="Open photo: Tented event setting"
+                        >
+                            <img
+                                src="/images/events/marquee-gathering.jpg"
+                                alt="Tents arranged around an event gathering"
+                                width="615"
+                                height="493"
+                                loading="lazy"
+                            />
+                        </button>
+                        <figcaption class="gallery-card__caption">
+                            Tented event setting
+                        </figcaption>
+                    </figure>
+                    <figure
+                        class="gallery-card gallery-card--wide"
+                        data-category="events"
+                    >
+                        <button
+                            class="gallery-item"
+                            type="button"
+                            data-full="/images/events/marquee-banquet.jpg"
+                            data-caption="A marquee arranged for dining"
+                            aria-label="Open photo: A marquee arranged for dining"
+                        >
+                            <img
+                                src="/images/events/marquee-banquet.jpg"
+                                alt="Tables arranged inside a large marquee"
+                                width="536"
+                                height="436"
+                                loading="lazy"
+                            />
+                        </button>
+                        <figcaption class="gallery-card__caption">
+                            A marquee arranged for dining
+                        </figcaption>
+                    </figure>
+                    <figure
+                        class="gallery-card gallery-card--tall"
+                        data-category="events"
+                    >
+                        <button
+                            class="gallery-item"
+                            type="button"
+                            data-full="/images/events/banquet-setup.jpg"
+                            data-caption="Seating set beneath a tent"
+                            aria-label="Open photo: Seating set beneath a tent"
+                        >
+                            <img
+                                src="/images/events/banquet-setup.jpg"
+                                alt="Rows of red chairs beneath a decorated tent"
+                                width="592"
+                                height="452"
+                                loading="lazy"
+                            />
+                        </button>
+                        <figcaption class="gallery-card__caption">
+                            Seating set beneath a tent
+                        </figcaption>
+                    </figure>
+                    <figure
+                        class="gallery-card gallery-card--standard"
+                        data-category="events"
+                    >
+                        <button
+                            class="gallery-item"
+                            type="button"
+                            data-full="/images/events/event-equipment-setup.jpg"
+                            data-caption="Tables and chairs prepared for guests"
+                            aria-label="Open photo: Tables and chairs prepared for guests"
+                        >
+                            <img
+                                src="/images/events/event-equipment-setup.jpg"
+                                alt="Tables and chairs arranged for a gathering"
+                                width="591"
+                                height="448"
+                                loading="lazy"
+                            />
+                        </button>
+                        <figcaption class="gallery-card__caption">
+                            Tables and chairs prepared for guests
+                        </figcaption>
+                    </figure>
+                    <figure
+                        class="gallery-card gallery-card--standard"
+                        data-category="events"
+                    >
+                        <button
+                            class="gallery-item"
+                            type="button"
+                            data-full="/images/events/outdoor-tent-setup.jpg"
+                            data-caption="A decorated outdoor tent"
+                            aria-label="Open photo: A decorated outdoor tent"
+                        >
+                            <img
+                                src="/images/events/outdoor-tent-setup.jpg"
+                                alt="A small tented event setup with purple drapery"
+                                width="573"
+                                height="445"
+                                loading="lazy"
+                            />
+                        </button>
+                        <figcaption class="gallery-card__caption">
+                            A decorated outdoor tent
+                        </figcaption>
+                    </figure>
+                    <figure
+                        class="gallery-card gallery-card--wide"
+                        data-category="events"
+                    >
+                        <button
+                            class="gallery-item"
+                            type="button"
+                            data-full="/images/events/garden-event-setup.jpg"
+                            data-caption="Outdoor tented event setup"
+                            aria-label="Open photo: Outdoor tented event setup"
+                        >
+                            <img
+                                src="/images/events/garden-event-setup.jpg"
+                                alt="Outdoor event tents with seating for guests"
+                                width="634"
+                                height="386"
+                                loading="lazy"
+                            />
+                        </button>
+                        <figcaption class="gallery-card__caption">
+                            Outdoor tented event setup
+                        </figcaption>
+                    </figure>
+                    <figure
+                        class="gallery-card gallery-card--standard"
+                        data-category="events"
+                    >
+                        <button
+                            class="gallery-item"
+                            type="button"
+                            data-full="/images/events/tent-table-setup.jpg"
+                            data-caption="A table and chairs under a tent"
+                            aria-label="Open photo: A table and chairs under a tent"
+                        >
+                            <img
+                                src="/images/events/tent-table-setup.jpg"
+                                alt="A table and chairs arranged beneath a yellow tent"
+                                width="506"
+                                height="393"
+                                loading="lazy"
+                            />
+                        </button>
+                        <figcaption class="gallery-card__caption">
+                            A table and chairs under a tent
+                        </figcaption>
+                    </figure>
+                    <figure
+                        class="gallery-card gallery-card--wide"
+                        data-category="events"
+                    >
+                        <button
+                            class="gallery-item"
+                            type="button"
+                            data-full="/images/events/outdoor-tent-row.jpg"
+                            data-caption="Rows of outdoor event tents"
+                            aria-label="Open photo: Rows of outdoor event tents"
+                        >
+                            <img
+                                src="/images/events/outdoor-tent-row.jpg"
+                                alt="Rows of white event tents on an open outdoor site"
+                                width="610"
+                                height="458"
+                                loading="lazy"
+                            />
+                        </button>
+                        <figcaption class="gallery-card__caption">
+                            Rows of outdoor event tents
+                        </figcaption>
+                    </figure>
+                    <figure
+                        class="gallery-card gallery-card--wide"
+                        data-category="events"
+                    >
+                        <button
+                            class="gallery-item"
+                            type="button"
+                            data-full="/images/events/purple-tent-setup.jpg"
+                            data-caption="Outdoor event tent arrangement"
+                            aria-label="Open photo: Outdoor event tent arrangement"
+                        >
+                            <img
+                                src="/images/events/purple-tent-setup.jpg"
+                                alt="Several white tents arranged outdoors"
+                                width="539"
+                                height="444"
+                                loading="lazy"
+                            />
+                        </button>
+                        <figcaption class="gallery-card__caption">
+                            Outdoor event tent arrangement
+                        </figcaption>
+                    </figure>
+                    <figure
+                        class="gallery-card gallery-card--standard"
+                        data-category="events"
+                    >
+                        <button
+                            class="gallery-item"
+                            type="button"
+                            data-full="/images/events/marquee-seating.jpg"
+                            data-caption="Tent seating prepared for guests"
+                            aria-label="Open photo: Tent seating prepared for guests"
+                        >
+                            <img
+                                src="/images/events/marquee-seating.jpg"
+                                alt="A white tent with seating arranged inside"
+                                width="536"
+                                height="419"
+                                loading="lazy"
+                            />
+                        </button>
+                        <figcaption class="gallery-card__caption">
+                            Tent seating prepared for guests
+                        </figcaption>
+                    </figure>
+                    <figure
+                        class="gallery-card gallery-card--tall"
+                        data-category="events"
+                    >
+                        <button
+                            class="gallery-item"
+                            type="button"
+                            data-full="/images/events/event-aisle-setup.jpg"
+                            data-caption="A roped event aisle"
+                            aria-label="Open photo: A roped event aisle"
+                        >
+                            <img
+                                src="/images/events/event-aisle-setup.jpg"
+                                alt="A red aisle with ropes set along a tented space"
+                                width="532"
+                                height="410"
+                                loading="lazy"
+                            />
+                        </button>
+                        <figcaption class="gallery-card__caption">
+                            A roped event aisle
+                        </figcaption>
+                    </figure>
+                    <figure
+                        class="gallery-card gallery-card--standard"
+                        data-category="events"
+                    >
+                        <button
+                            class="gallery-item"
+                            type="button"
+                            data-full="/images/events/marquee-venue.jpg"
+                            data-caption="Marquees arranged for an outdoor event"
+                            aria-label="Open photo: Marquees arranged for an outdoor event"
+                        >
+                            <img
+                                src="/images/events/marquee-venue.jpg"
+                                alt="White marquee tents with decorative draping"
+                                width="475"
+                                height="445"
+                                loading="lazy"
+                            />
+                        </button>
+                        <figcaption class="gallery-card__caption">
+                            Marquees arranged for an outdoor event
+                        </figcaption>
+                    </figure>
                 </div>
                 <p class="gallery-footnote">
-                    Our food service and event setups, ready for a day worth
-                    gathering around.
+                    Our food and event setups, prepared for gatherings across
+                    Kenya.
                 </p>
             </section>
         </main>
@@ -421,26 +810,90 @@
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="WhatsApp"
-                            ><span aria-hidden="true">wa</span></a
+                            ><svg
+                                class="social-icon social-icon--whatsapp"
+                                viewBox="0 0 32 32"
+                                aria-hidden="true"
+                                focusable="false"
+                            >
+                                <path
+                                    d="M16 3.2A12.7 12.7 0 0 0 5.1 22.4L3.4 28.7l6.5-1.7A12.7 12.7 0 1 0 16 3.2Z"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                                <path
+                                    d="M11.3 9.7c-.4 0-.8.2-1.1.6-.4.5-1.3 1.4-1.3 3.3s1.3 3.8 1.5 4.1c.2.3 2.5 4 6.1 5.4 3 .9 3.6.7 4.3.6.7-.1 2.1-.8 2.4-1.6.3-.8.3-1.5.2-1.6-.1-.1-.3-.2-.7-.4l-2.4-1.1c-.3-.1-.6-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.3-.8.1-.4-.2-1.7-.6-3.2-2-.9-.8-1.5-1.8-1.7-2.2-.2-.3 0-.5.2-.7l.6-.7c.2-.2.2-.4.3-.6.1-.2 0-.5 0-.7l-1.1-2.5c-.3-.6-.6-.7-.9-.7Z"
+                                    fill="currentColor"
+                                /></svg></a
                         ><span
                             class="social-link social-slot"
                             data-social-slot="facebook"
                             role="img"
-                            aria-label="Facebook link to be added"
-                            ><span aria-hidden="true">f</span></span
+                            aria-label="Facebook icon"
+                            ><svg
+                                class="social-icon"
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                                focusable="false"
+                            >
+                                <path
+                                    fill="currentColor"
+                                    d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073c0 6.016 4.388 11.025 10.125 11.928v-8.437H7.078v-3.49h3.047V9.41c0-3.023 1.792-4.703 4.533-4.703 1.312 0 2.686.235 2.686.235v2.953h-1.513c-1.49 0-1.954.932-1.954 1.885v2.294h3.328l-.532 3.49h-2.796v8.437C19.612 23.098 24 18.089 24 12.073Z"
+                                /></svg></span
                         ><span
                             class="social-link social-slot"
                             data-social-slot="twitter"
                             role="img"
-                            aria-label="Twitter link to be added"
-                            ><span aria-hidden="true">t</span></span
+                            aria-label="Twitter icon"
+                            ><svg
+                                class="social-icon"
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                                focusable="false"
+                            >
+                                <path
+                                    fill="currentColor"
+                                    d="M23.953 4.57a10 10 0 0 1-2.825.775 4.932 4.932 0 0 0 2.163-2.723 9.99 9.99 0 0 1-3.127 1.195 4.92 4.92 0 0 0-8.384 4.482A13.98 13.98 0 0 1 1.64 3.162a4.822 4.822 0 0 0-.666 2.475c0 1.708.87 3.216 2.188 4.096a4.904 4.904 0 0 1-2.229-.616v.06c0 2.385 1.697 4.374 3.95 4.827a4.935 4.935 0 0 1-2.224.085c.627 1.956 2.445 3.379 4.6 3.419A9.896 9.896 0 0 1 0 18.407a13.94 13.94 0 0 0 7.548 2.212c9.057 0 14.01-7.504 14.01-14.01 0-.213-.005-.425-.014-.636A10.012 10.012 0 0 0 24 4.59Z"
+                                /></svg></span
                         ><span
                             class="social-link social-slot"
                             data-social-slot="instagram"
                             role="img"
-                            aria-label="Instagram link to be added"
-                            ><span aria-hidden="true">ig</span></span
-                        >
+                            aria-label="Instagram icon"
+                            ><svg
+                                class="social-icon"
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                                focusable="false"
+                            >
+                                <rect
+                                    x="3"
+                                    y="3"
+                                    width="18"
+                                    height="18"
+                                    rx="5"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                />
+                                <circle
+                                    cx="12"
+                                    cy="12"
+                                    r="4"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                />
+                                <circle
+                                    cx="17.5"
+                                    cy="6.5"
+                                    r="1"
+                                    fill="currentColor"
+                                /></svg
+                        ></span>
                     </nav>
                 </div>
             </div>
@@ -453,7 +906,7 @@
                     <div>
                         <a href="/privacy.html">Privacy</a
                         ><a href="/terms.html">Terms</a
-                        ><a href="#main">Back to top ↑</a>
+                        ><a href="#main">Back to top</a>
                     </div>
                 </div>
             </div>

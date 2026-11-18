@@ -1,5 +1,4 @@
 const SOCIAL_LINKS = {
-    // Add our real Facebook, Twitter and Instagram URLs when available.
     facebook: "",
     twitter: "",
     instagram: "",
@@ -49,7 +48,26 @@ document.querySelectorAll("[data-nav-link]").forEach((link) => {
     }
 });
 
-// Keep social channels available to update; never create empty or non-HTTPS links.
+const homeHero = document.querySelector(".home-page .hero--photo");
+if (header && homeHero) {
+    const updateHomeHeader = (isAfterHero) =>
+        header.classList.toggle("is-after-hero", isAfterHero);
+    if ("IntersectionObserver" in window) {
+        const homeHeaderObserver = new IntersectionObserver(
+            ([entry]) => {
+                updateHomeHeader(!entry.isIntersecting);
+            },
+            { threshold: 0 },
+        );
+        homeHeaderObserver.observe(homeHero);
+    } else {
+        const updateOnScroll = () =>
+            updateHomeHeader(homeHero.getBoundingClientRect().bottom <= 0);
+        window.addEventListener("scroll", updateOnScroll, { passive: true });
+        updateOnScroll();
+    }
+}
+
 document.querySelectorAll("[data-social-slot]").forEach((slot) => {
     const value = SOCIAL_LINKS[slot.dataset.socialSlot]?.trim();
     if (!value) return;
@@ -299,3 +317,43 @@ if ("IntersectionObserver" in window && !prefersReducedMotion) {
 document.querySelectorAll("[data-current-year]").forEach((item) => {
     item.textContent = String(new Date().getFullYear());
 });
+
+const occasionFeature = document.querySelector("[data-occasion-feature]");
+if (occasionFeature) {
+    const occasionSteps = Array.from(
+        occasionFeature.querySelectorAll("[data-occasion-step]"),
+    );
+    const showOccasion = (step) => {
+        occasionSteps.forEach((item) => {
+            const active = item === step;
+            item.classList.toggle("is-active", active);
+            const titleLink = item.querySelector(".occasion-story__title");
+            if (active) titleLink?.setAttribute("aria-current", "step");
+            else titleLink?.removeAttribute("aria-current");
+        });
+    };
+    if (occasionSteps.length) {
+        showOccasion(
+            occasionSteps.find((step) =>
+                step.classList.contains("is-active"),
+            ) || occasionSteps[0],
+        );
+        if ("IntersectionObserver" in window) {
+            const occasionObserver = new IntersectionObserver(
+                (entries) => {
+                    const current = entries
+                        .filter((entry) => entry.isIntersecting)
+                        .sort(
+                            (a, b) => b.intersectionRatio - a.intersectionRatio,
+                        )[0];
+                    if (current) showOccasion(current.target);
+                },
+                {
+                    rootMargin: "-38% 0px -38% 0px",
+                    threshold: [0.2, 0.45, 0.7],
+                },
+            );
+            occasionSteps.forEach((step) => occasionObserver.observe(step));
+        }
+    }
+}
