@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#f7f3ec" />
+        <meta
+            name="description"
+            content="Explore our food, catering and event-equipment work in a curated photo gallery."
+        />
+        <title>Our Gallery | Aspire Catering &amp; Events Services</title>
+        <link
+            rel="preload"
+            href="/fonts/CormorantGaramond-Variable-Latin.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin
+        />
+        <link
+            rel="preload"
+            href="/fonts/Jost-Variable-Latin.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin
+        />
+        <link rel="stylesheet" href="/styles.css" />
+        <script src="/script.js" defer></script>
+    </head>
+    <body>
+        <a class="skip-link" href="#main">Skip to content</a>
+        <div class="utility-bar">
+            <div class="container utility-bar__inner">
+                <p>
+                    Meru, Kenya <span aria-hidden="true">·</span> We cater and
+                    support events across Kenya and beyond
+                </p>
+                <a href="tel:+254729845842"
+                    >Call us <span aria-hidden="true">↗</span></a
+                >
+            </div>
+        </div>
+        <header class="site-header">
+            <div class="container site-header__inner">
+                <a class="brand" href="/" aria-label="Aspire home"
+                    ><img
+                        src="/images/brand/aspire-chef-cap-wordmark.png"
+                        alt="Aspire logo with chef cap"
+                        width="120"
+                        height="96" /></a
+                ><button
+                    class="menu-toggle"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="main-navigation"
+                    data-menu-toggle
+                >
+                    <span class="visually-hidden">Open navigation</span
+                    ><span class="menu-toggle__bars" aria-hidden="true"
+                        ><i></i><i></i
+                    ></span>
+                </button>
+                <nav
+                    class="main-navigation"
+                    id="main-navigation"
+                    aria-label="Main navigation"
+                >
+                    <a href="/" data-nav-link>Home</a
+                    ><a href="/about.html" data-nav-link>About us</a
+                    ><a href="/services.html" data-nav-link
+                        >Our services &amp; events</a
+                    ><a href="/gallery.html" data-nav-link>Gallery</a
+                    ><a href="/contact.html" data-nav-link>Contact us</a
+                    ><a class="nav-cta" href="/contact.html"
+                        >Talk to us <span aria-hidden="true">↗</span></a
+                    >
+                </nav>
+            </div>
+        </header>
+        <main id="main">
+            <section class="page-hero page-hero--gallery">
+                <img
+                    src="/images/events/tented-event.jpg"
+                    alt="An outdoor event beneath a large tent"
+                    fetchpriority="high"
+                />
+                <div class="page-hero__shade"></div>
+                <div class="container page-hero__content">
+                    <p class="eyebrow eyebrow--light">Our gallery</p>
+                    <h1>Food, setting<br />&amp; <em>occasion.</em></h1>
+                    <p>
+                        A closer look at our catering displays, food service and
+                        event settings.
+                    </p>
+                </div>
+            </section>
+            <nav class="breadcrumbs container" aria-label="Breadcrumb">
+                <a href="/">Home</a><span aria-hidden="true">/</span
+                ><span aria-current="page">Gallery</span>
+            </nav>
+            <section
+                class="section container gallery-section"
+                aria-labelledby="gallery-title"
+            >
+                <div class="section-heading reveal">
+                    <div>
+                        <p class="eyebrow">A moving gallery</p>
+                        <h2 id="gallery-title">
+                            A feeling for<br /><em>the occasion.</em>
+                        </h2>
+                    </div>
+                    <p class="section-heading__aside">
+                        Scroll to move through the photos. Select any image to
+                        view it larger.
+                    </p>
+                </div>
+                <div
+                    class="gallery-filters"
+                    role="group"
+                    aria-label="Filter our photographs"
+                >
+                    <button
+                        type="button"
+                        class="filter-button is-active"
+                        data-gallery-filter="all"
+                        aria-pressed="true"
+                    >
+                        All photographs</button
+                    ><button
+                        type="button"
+                        class="filter-button"
+                        data-gallery-filter="food"
+                        aria-pressed="false"
+                    >
+                        Food &amp; catering</button
+                    ><button
+                        type="button"
+                        class="filter-button"
+                        data-gallery-filter="events"
+                        aria-pressed="false"
+                    >
+                        Events &amp; equipment
+                    </button>
+                </div>
+                <p class="gallery-scroll-hint" aria-hidden="true">
+                    Keep scrolling to explore <span>↓</span>
+                </p>
+                <div class="gallery-scroll" data-scroll-gallery>
+                    <div
+                        class="gallery-scroll__stage"
+                        aria-label="Scroll-driven photo carousel"
+                    >
+                        <div class="gallery-scroll__track">
+                            <button
+                                class="gallery-item gallery-item--large"
+                                type="button"
+                                data-category="food"
+                                data-full="/images/food/buffet-dishes.jpg"
+                                data-caption="A selection of buffet dishes"
+                            >
+                                <img
+                                    src="/images/food/buffet-dishes.jpg"
+                                    alt="A selection of buffet dishes"
+                                    width="589"
+                                    height="433"
+                                    loading="lazy"
+                                /><span class="gallery-item__label"
+                                    >Food &amp; catering</span
+                                >
+                            </button>
+                            <button
+                                class="gallery-item"
+                                type="button"
+                                data-category="events"
+                                data-full="/images/events/banquet-setup.jpg"
+                                data-caption="A banquet setting prepared for guests"
+                            >
+                                <img
+                                    src="/images/events/banquet-setup.jpg"
+                                    alt="A banquet setting prepared for guests"
+                                    width="592"
+                                    height="452"
+                                    loading="lazy"
+                                /><span class="gallery-item__label"
+                                    >Event setup</span
+                                >
+                            </button>
+                            <button
+                                class="gallery-item"
+                                type="button"
+                                data-category="food"
+                                data-full="/images/food/event-refreshments.jpg"
+                                data-caption="Refreshments ready to be served"
+                            >
+                                <img
+                                    src="/images/food/event-refreshments.jpg"
+                                    alt="Refreshments ready to be served"
+                                    width="569"
+                                    height="420"
+                                    loading="lazy"
+                                /><span class="gallery-item__label"
+                                    >Refreshments</span
+                                >
+                            </button>
+                            <button
+                                class="gallery-item"
+                                type="button"
+                                data-category="events"
+                                data-full="/images/events/event-equipment-setup.jpg"
+                                data-caption="Chairs and equipment arranged for an event"
+                            >
+                                <img
+                                    src="/images/events/event-equipment-setup.jpg"
+                                    alt="Chairs and equipment arranged for an event"
+                                    width="634"
+                                    height="386"
+                                    loading="lazy"
+                                /><span class="gallery-item__label"
+                                    >Event equipment</span
+                                >
+                            </button>
+                            <button
+                                class="gallery-item gallery-item--large"
+                                type="button"
+                                data-category="food"
+                                data-full="/images/food/catering-display.jpg"
+                                data-caption="A catering display prepared for an occasion"
+                            >
+                                <img
+                                    src="/images/food/catering-display.jpg"
+                                    alt="A catering display prepared for an occasion"
+                                    width="582"
+                                    height="455"
+                                    loading="lazy"
+                                /><span class="gallery-item__label"
+                                    >Catering display</span
+                                >
+                            </button>
+                            <button
+                                class="gallery-item"
+                                type="button"
+                                data-category="events"
+                                data-full="/images/events/garden-event-setup.jpg"
+                                data-caption="A garden event setup"
+                            >
+                                <img
+                                    src="/images/events/garden-event-setup.jpg"
+                                    alt="A garden event setup among trees"
+                                    width="634"
+                                    height="386"
+                                    loading="lazy"
+                                /><span class="gallery-item__label"
+                                    >Event setting</span
+                                >
+                            </button>
+                            <button
+                                class="gallery-item"
+                                type="button"
+                                data-category="food"
+                                data-full="/images/food/food-service-station.jpg"
+                                data-caption="A food service station at an event"
+                            >
+                                <img
+                                    src="/images/food/food-service-station.jpg"
+                                    alt="A food service station at an event"
+                                    width="536"
+                                    height="393"
+                                    loading="lazy"
+                                /><span class="gallery-item__label"
+                                    >Food service</span
+                                >
+                            </button>
+                            <button
+                                class="gallery-item"
+                                type="button"
+                                data-category="food"
+                                data-full="/images/food/prepared-food.jpg"
+                                data-caption="Prepared food for an event"
+                            >
+                                <img
+                                    src="/images/food/prepared-food.jpg"
+                                    alt="Prepared food for an event"
+                                    width="589"
+                                    height="433"
+                                    loading="lazy"
+                                /><span class="gallery-item__label"
+                                    >Prepared food</span
+                                >
+                            </button>
+                            <button
+                                class="gallery-item gallery-item--large"
+                                type="button"
+                                data-category="events"
+                                data-full="/images/events/outdoor-tent-setup.jpg"
+                                data-caption="An outdoor tent setup"
+                            >
+                                <img
+                                    src="/images/events/outdoor-tent-setup.jpg"
+                                    alt="An outdoor tent setup"
+                                    width="573"
+                                    height="445"
+                                    loading="lazy"
+                                /><span class="gallery-item__label"
+                                    >Tents &amp; events</span
+                                >
+                            </button>
+                            <button
+                                class="gallery-item"
+                                type="button"
+                                data-category="food"
+                                data-full="/images/food/prepared-dishes.jpg"
+                                data-caption="A variety of prepared dishes"
+                            >
+                                <img
+                                    src="/images/food/prepared-dishes.jpg"
+                                    alt="A variety of prepared dishes"
+                                    width="589"
+                                    height="433"
+                                    loading="lazy"
+                                /><span class="gallery-item__label"
+                                    >Prepared dishes</span
+                                >
+                            </button>
+                            <button
+                                class="gallery-item"
+                                type="button"
+                                data-category="food"
+                                data-full="/images/food/table-setting-and-food.jpg"
+                                data-caption="A table setting with food"
+                            >
+                                <img
+                                    src="/images/food/table-setting-and-food.jpg"
+                                    alt="A table setting with food"
+                                    width="653"
+                                    height="421"
+                                    loading="lazy"
+                                /><span class="gallery-item__label"
+                                    >Table setting</span
+                                >
+                            </button>
+                            <button
+                                class="gallery-item"
+                                type="button"
+                                data-category="events"
+                                data-full="/images/events/tented-event.jpg"
+                                data-caption="A tented event setup"
+                            >
+                                <img
+                                    src="/images/events/tented-event.jpg"
+                                    alt="A tented event setup"
+                                    width="653"
+                                    height="421"
+                                    loading="lazy"
+                                /><span class="gallery-item__label"
+                                    >Tented event</span
+                                >
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <p class="gallery-footnote">
+                    Our food service and event setups, ready for a day worth
+                    gathering around.
+                </p>
+            </section>
+        </main>
+        <dialog
+            class="lightbox"
+            id="gallery-lightbox"
+            aria-label="Photo viewer"
+        >
+            <button
+                class="lightbox__close"
+                type="button"
+                aria-label="Close photo"
+            >
+                ×</button
+            ><img
+                class="lightbox__image"
+                src=""
+                alt="Selected catering and event photograph"
+            />
+            <p class="lightbox__caption"></p>
+        </dialog>
+        <footer class="site-footer">
+            <div class="container footer-main">
+                <div class="footer-brand-block">
+                    <a href="/" aria-label="Aspire home"
+                        ><img
+                            src="/images/brand/aspire-chef-cap-wordmark.png"
+                            alt="Aspire logo with chef cap"
+                            width="112"
+                            height="90"
+                            loading="lazy"
+                    /></a>
+                    <p>
+                        Professionalism · Dedication · Excellence · Quality ·
+                        Affordability
+                    </p>
+                </div>
+                <div class="footer-column">
+                    <h2>Contact us</h2>
+                    <a href="mailto:aspirecateringservices@gmail.com"
+                        >aspirecateringservices@gmail.com</a
+                    ><a href="tel:+254729845842">+254 729 845 842</a
+                    ><a href="tel:+254736059094">+254 736 059 094</a
+                    ><span>P.O. Box 325-60200, Meru, Kenya</span>
+                </div>
+                <div class="footer-column">
+                    <h2>Explore</h2>
+                    <a href="/about.html">About us</a
+                    ><a href="/services.html">Our services &amp; events</a
+                    ><a href="/gallery.html">Gallery</a
+                    ><a href="/contact.html">Contact us</a>
+                </div>
+                <div class="footer-column footer-column--social">
+                    <h2>Follow us</h2>
+                    <nav class="social-links" aria-label="Social media links">
+                        <a
+                            class="social-link"
+                            href="https://wa.me/254729845842"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="WhatsApp"
+                            ><span aria-hidden="true">wa</span></a
+                        ><span
+                            class="social-link social-slot"
+                            data-social-slot="facebook"
+                            role="img"
+                            aria-label="Facebook link to be added"
+                            ><span aria-hidden="true">f</span></span
+                        ><span
+                            class="social-link social-slot"
+                            data-social-slot="twitter"
+                            role="img"
+                            aria-label="Twitter link to be added"
+                            ><span aria-hidden="true">t</span></span
+                        ><span
+                            class="social-link social-slot"
+                            data-social-slot="instagram"
+                            role="img"
+                            aria-label="Instagram link to be added"
+                            ><span aria-hidden="true">ig</span></span
+                        >
+                    </nav>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container footer-bottom__inner">
+                    <p>
+                        © <span data-current-year>2026</span> Aspire Catering
+                        &amp; Events Services. All rights reserved.
+                    </p>
+                    <div>
+                        <a href="/privacy.html">Privacy</a
+                        ><a href="/terms.html">Terms</a
+                        ><a href="#main">Back to top ↑</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <a
+            class="whatsapp-float"
+            href="https://wa.me/254729845842?text=Hello%20Aspire%2C%20I%27d%20like%20to%20enquire%20about%20catering%20and%20event%20services."
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Message us on WhatsApp"
+            title="Message us on WhatsApp"
+            ><svg
+                class="whatsapp-float__icon"
+                viewBox="0 0 32 32"
+                aria-hidden="true"
+                focusable="false"
+            >
+                <path
+                    d="M16 3.2A12.7 12.7 0 0 0 5.1 22.4L3.4 28.7l6.5-1.7A12.7 12.7 0 1 0 16 3.2Z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+                <path
+                    d="M11.3 9.7c-.4 0-.8.2-1.1.6-.4.5-1.3 1.4-1.3 3.3s1.3 3.8 1.5 4.1c.2.3 2.5 4 6.1 5.4 3 .9 3.6.7 4.3.6.7-.1 2.1-.8 2.4-1.6.3-.8.3-1.5.2-1.6-.1-.1-.3-.2-.7-.4l-2.4-1.1c-.3-.1-.6-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.3-.8.1-.4-.2-1.7-.6-3.2-2-.9-.8-1.5-1.8-1.7-2.2-.2-.3 0-.5.2-.7l.6-.7c.2-.2.2-.4.3-.6.1-.2 0-.5 0-.7l-1.1-2.5c-.3-.6-.6-.7-.9-.7Z"
+                    fill="currentColor"
+                /></svg
+            ><span class="visually-hidden">Message us on WhatsApp</span></a
+        >
+        <div class="visually-hidden" aria-live="polite" id="site-status"></div>
+    </body>
+</html>
